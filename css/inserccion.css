@@ -1,0 +1,63 @@
+/******************************************************/
+/*      estilo del formulario de inserción            */
+/*      CRUD de Actividad de Lenguaje de Marcas       */
+/*      autor: Daniel Trujillo Fernández              */
+/*      REASON: PROYECT CLASS                         */
+/******************************************************/
+
+/***************** estilo general *********************/
+
+label::after {
+    content: " *";
+    color: red;
+    font-weight: bold;
+}
+
+form {
+    /*display-flex neceario para grid o flexbox*/
+    width: 50%;
+    min-width: 500px;
+    max-width: 600px;
+    margin: auto;    /* podríamos usar grid o flexbox */
+    box-shadow: 5px 5px 10px rgba(79, 21, 140, 0.477);
+    border-radius: 20px; 
+    padding: 20px;
+
+    background-color: lightblue;
+}
+
+form:hover {
+    box-shadow: 5px 5px 30px rgba(135, 25, 25, 0.527);
+}
+
+body{background-color: lightcyan;}
+
+h2 {
+    color: royalblue;
+}
+
+fieldset {
+    background-color: cornsilk;
+}
+
+input[type="text"] {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+input, textarea, select {
+    margin-bottom: 20px;
+    resize: none;
+}
+
+input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]) {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+@media only screen and (width<760px) {       /*********** TABLET **************/
+    #wrapper {width: 90%;}
+    }
+@media only screen and (width>900px){        /************ COMPUTER ************/
+    
+    #wrapper {width: 80%;}}
